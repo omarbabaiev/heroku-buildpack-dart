@@ -41,9 +41,8 @@ build_pubspec() {
   message "*** Running pub get"
 
   dart --version
-
+  message "*** dart running"
   #start pub from the /app folder to have correct symlink paths
-  pub get  
   
   dart pub global activate webdev
   if [ -d "web" ]
